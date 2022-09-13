@@ -29,7 +29,7 @@ function App() {
           </TooltipComponent>
          </div>
          {activeMenu ?(
-          <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white">
+          <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white shadow-xl">
             <Sidebar />
           </div>
          ):(
