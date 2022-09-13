@@ -1,4 +1,6 @@
+
 export { Customer } from "./Customer";
+export { Employee  } from "./Employee"
 export { Orders } from "./Orders";
 export  { Editor } from "./Editor.jsx"
 export { Kanban } from "./Kanban.jsx";
@@ -12,4 +14,6 @@ export { Financial } from "./charts/Financial";
 export { Pie } from "./charts/Pie";
 export { Pyramid } from "./charts/Pyramid";
 export { Stacked } from "./charts/Stacked.jsx";
+export  { Line } from "./charts/Line";
+
 

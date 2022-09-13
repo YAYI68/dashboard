@@ -2,14 +2,14 @@ import React,{useEffect,useState} from 'react';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import {FiSettings} from "react-icons/fi";
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import { Calender,ColorMap,ColorPicker,
+import { Calendar,ColorMap,ColorPicker,
          Customer,Ecommerce,Editor,Kanban,
          Area,Orders,Bar,Pie,Pyramid,
-         Financial,Line,Stacked,Employees
+         Financial,Line,Stacked,Employee
 } from "./pages"
 import { Sidebar, Navbar,Footer, ThemeSettings} from './components';
 
-Sidebar
+
 
 function App() {
   const activeMenu= true;
@@ -53,13 +53,13 @@ function App() {
 
             {/* Pages */}
             <Route path="/orders" element={<Orders/>}/>
-            <Route path="/employees" element={<Employees/>}/>
+            <Route path="/employees" element={<Employee/>}/>
             <Route path="/customers" element={<Customer/>}/>
 
             {/* Apps */}
             <Route path="/kanban" element={<Kanban/>}  />
             <Route path="/editor" element={<Editor/>} />
-            <Route path="/calender" element={<Calender/>} />
+            <Route path="/calender" element={<Calendar/>} />
             <Route path="/color-picker" element={<ColorPicker/>}  />
 
             {/* Charts */}
