@@ -2,7 +2,11 @@ import React,{useEffect,useState} from 'react';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import {FiSettings} from "react-icons/fi";
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-
+import { Calender,ColorMap,ColorPicker,
+         Customer,Ecommerce,Editor,Kanban,
+         Area,Orders,Bar,Pie,Pyramid,
+         Financial,Line,Stacked
+} from "./pages"
 
 
 function App() {
