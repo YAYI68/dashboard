@@ -23,3 +23,5 @@ export const ContextProvider = ({children}) => {
         </StateContext.Provider>
         ) 
 }
+
+export const useSateContext = ()=>useContext(StateContext)

@@ -8,11 +8,13 @@ import { Calendar,ColorMap,ColorPicker,
          Financial,Line,Stacked,Employee
 } from "./pages"
 import { Sidebar, Navbar,Footer, ThemeSettings} from './components';
+import { useStateContext } from "./context/ContextProvider"; 
+
 
 
 
 function App() {
-  const activeMenu= true;
+  const {activeMenu} = useStateContext();
   return (
     <div className="App">
      <BrowserRouter>
