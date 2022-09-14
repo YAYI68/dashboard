@@ -21,8 +21,9 @@ export const Sidebar = () => {
            flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900" >
              <SiShopware /> <span>Shoppy </span>
            </Link>
+           {/* <MdOutlineCancel className='fill-black' /> */}
            <TooltipComponent content="Menu" position='BottomCenter'>
-              <button type="button" className="text-xl  rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
+              <button type="button" className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block"
                onClick = { () =>setActiveMenu((prevState)=>!prevState)}>
                 <MdOutlineCancel className='fill-black' />
               </button>
