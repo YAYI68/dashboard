@@ -12,4 +12,4 @@ export { UserProfile } from "./UserProfile";
 export { LineChart } from "./charts/LineChart";
 export { PieChart } from "./charts/PieChart";
 export { SparkLine } from "./charts/SparkLine";
-export { StackedChart } from "./charts/StackedChart";
+export { Stacked } from "./charts/StackedChart";

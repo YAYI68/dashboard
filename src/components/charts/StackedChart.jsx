@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const StackedChart = () => {
+export const Stacked = () => {
   return (
     <div>Stacked</div>
   )
