@@ -1,5 +1,8 @@
 import React from 'react'
-import { SparklineComponent, Inject, SparklineTooltip } from '@syncfusion/ej2-react-charts'
+import { SparklineComponent, Inject, SparklineTooltip } 
+from '@syncfusion/ej2-react-charts';
+
+
 export const SparkLine = ({id,height,width,color,currentColor,type,data}) => {
   return (
     <SparklineComponent 
@@ -12,11 +15,11 @@ export const SparkLine = ({id,height,width,color,currentColor,type,data}) => {
      border={{color:currentColor,width:2}}
      dataSource= {data}
      xName="x"
-     yName="y"
+     yName="yval"
      type={type} 
      tooltipSettings={{
       visible:true,
-      format:'${x} : data ${y}',
+      format:'${x} : data ${yval}',
       trackLineSettings:{
         visible:true,
       }

@@ -89,7 +89,7 @@ export const  Ecommerce = () => {
                 <SparkLine
                  currentColor="blue"
                  type="Line"
-                 id="line-sparkline"
+                 id="sparkline"
                  height="80px"
                  width="250px"
                  data={SparklineAreaData}
