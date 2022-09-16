@@ -9,7 +9,7 @@ import { Calendar,ColorMap,ColorPicker,
 } from "./pages"
 import { Sidebar, Navbar,Footer, ThemeSettings} from './components';
 import { useStateContext } from "./context/ContextProvider"; 
-
+import "./App.css"
 
 
 
