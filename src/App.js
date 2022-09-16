@@ -14,16 +14,17 @@ import "./App.css"
 
 
 function App() {
-  const { activeMenu,themeSettings,setThemeSettings } = useStateContext();
+  const { activeMenu,themeSettings,setThemeSettings,
+    currentColor,currentMode } = useStateContext();
   return (
-    <div className="App">
+    <div className={currentMode === 'Dark'?'dark':''}>
      <BrowserRouter>
       <div className="flex relative dark:bg-main-dark-bg">
          <div className="fixed right-4 bottom-4 z-[1000]">
           <TooltipComponent content="Settings" position="Top">
             <button type="button" className="text-3xl rounded-full p-3 hover:drop-shadow-xl
              hover:bg-light-gray text-white"
-             style={{backgroundColor:"blue",
+             style={{backgroundColor:currentColor,
             }}
             onClick = {()=>setThemeSettings(true)}
              >
@@ -40,7 +41,7 @@ function App() {
            <Sidebar /> 
           </div>
          ) }
-         <div className={`dark:bg-main-bg bg-main-bg min-h-screen w-full
+         <div className={`dark:bg-main-dark-bg bg-main-bg min-h-screen w-full
          ${activeMenu?'md:ml-72':'flex-2'} `
         }>
           <div className="fixed md:static bg-main-bg dark:bg-main-bg navbar w-full">

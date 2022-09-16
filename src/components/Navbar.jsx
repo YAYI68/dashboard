@@ -52,7 +52,7 @@ export const Navbar = () => {
   
 
   return (
-    <div className='flex justify-between p-2 md:mx-6 relative'>
+    <div className='flex justify-between p-2 md:mx-6 relative dark:bg-main-dark-bg'>
        <NavButton title="Menu" 
        customFunc={() => setActiveMenu((prev)=>!prev)}
         color={currentColor} icon={<AiOutlineMenu/>} />
