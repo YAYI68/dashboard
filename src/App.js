@@ -14,7 +14,7 @@ import "./App.css"
 
 
 function App() {
-  const { activeMenu } = useStateContext();
+  const { activeMenu,themeSettings,setThemeSettings } = useStateContext();
   return (
     <div className="App">
      <BrowserRouter>
@@ -25,6 +25,7 @@ function App() {
              hover:bg-light-gray text-white"
              style={{backgroundColor:"blue",
             }}
+            onClick = {()=>setThemeSettings(true)}
              >
               <FiSettings />
             </button>
@@ -46,7 +47,9 @@ function App() {
             < Navbar />
           </div>
          <div>
+         {themeSettings &&   
           <ThemeSettings />
+         } 
            <Routes>
             {/* dashboard */}
             <Route path="/" element={<Ecommerce/>} />
