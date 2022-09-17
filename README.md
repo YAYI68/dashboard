@@ -1,4 +1,4 @@
 # Simple Ecommerce Dashboard with React And Syncfusion
 
-Visit the website [Create React App](https://github.com/facebook/create-react-app).
+Visit the website [Create React App](https://ecommerce-dashboard-sample.netlify.app).
 
