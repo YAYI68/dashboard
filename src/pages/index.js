@@ -9,11 +9,10 @@ export { ColorPicker } from "./ColorPicker.jsx";
 export {Calendar } from "./Calendar.jsx";
 export { Area } from "./charts/Area";
 export { Bar } from "./charts/Bar";
-export { ColorMap } from "./charts/ColorMap";
 export { Financial } from "./charts/Financial";
 export { Pie } from "./charts/Pie";
 export { Pyramid } from "./charts/Pyramid";
 export { Stacked } from "./charts/Stacked.jsx";
 export  { Line } from "./charts/Line";
-
+export  { ColorMapping } from "./charts/ColorMapping";
 

@@ -17,3 +17,4 @@ export { AreaChart } from "./charts/AreaChart";
 export { BarChart } from "./charts/BarChart";
 export { PyramidChart } from "./charts/PyramidChart";
 export { FinancialChart } from "./charts/FinancialChart";
+export { ColorMapChart } from "./charts/ColorMapChart";
