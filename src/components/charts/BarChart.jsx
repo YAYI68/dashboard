@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChartComponent,SeriesCollectionDirective,
-    SeriesDirective, Inject, DateTime,BarSeries ,Legend, Tooltip ,
+    SeriesDirective, Inject,Legend, Tooltip ,ColumnSeries, DataLabel,Category 
   } from '@syncfusion/ej2-react-charts';
   
   import { barCustomSeries,barPrimaryYAxis,barPrimaryXAxis } from '../../data/dummy';
@@ -17,8 +17,9 @@ export const BarChart = () => {
    chartArea = {{border:{ width:0}}}
    tooltip = {{enable: true}} 
    background = {currentMode === "Dark"?'#33373E':"#fff"} 
+   legendSettings={{ background: 'white' }}
    >
-    <Inject services={[DateTime,BarSeries ,Legend,Tooltip ]} />
+    <Inject services={[ColumnSeries, Legend, Tooltip, Category, DataLabel]} />
     <SeriesCollectionDirective>
         {barCustomSeries.map((item, index)=>(
             <SeriesDirective key={index} {...item} />
