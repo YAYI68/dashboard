@@ -5,7 +5,7 @@ import { ChartComponent, SeriesCollectionDirective, SeriesDirective,
 
   import { stackedCustomSeries, stackedPrimaryXAxis, stackedPrimaryYAxis } from '../../data/dummy';
 
-export const Stacked = ({width, height}) => {
+export const StackedChart = ({width, height}) => {
   return (
    <ChartComponent
      width={width} 
