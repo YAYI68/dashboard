@@ -6,7 +6,7 @@ import { chatData } from '../data/dummy';
 import { useStateContext } from '../context/ContextProvider';
 
 export const Chat = () => {
-  const { currentColor } = useStateContext();
+  const { currentColor , closeClick} = useStateContext();
 
   return (
     <div className="nav-item absolute right-5 md:right-52 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
@@ -18,9 +18,10 @@ export const Chat = () => {
           </button>
         </div>
         <Button
-          icon={<MdOutlineCancel />}
+          onClick={closeClick}
+          text={<MdOutlineCancel />}
           color="rgb(153, 171, 180)"
-          bgHoverColor="light-gray"
+          bgColor="light-gray"
           size="2xl"
           borderRadius="50%"
         />
