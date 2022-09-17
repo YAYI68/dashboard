@@ -74,7 +74,7 @@ export const Navbar = () => {
            position="BottomCenter"  
           >
             <div className="flex item-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg "
-             onClick={()=>handleClick('userprofile')}>
+             onClick={()=>handleClick('userProfile')}>
               <img className='rounded-full w-8 h-8' 
               src={avatar} alt="" />
               <p>
