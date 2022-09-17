@@ -10,15 +10,15 @@ export const BarChart = () => {
     const { currentMode } = useStateContext();
   return (
    <ChartComponent
-   id="line-chart"
+   id="bar-chart"
    height="420px"
    primaryXAxis = {barPrimaryXAxis}
    primaryYAxis = {barPrimaryYAxis}
    chartArea = {{border:{ width:0}}}
    tooltip = {{enable: true}} 
-   background = {currentMode ==="Dark"?'#33373E':"#fff"} 
+   background = {currentMode === "Dark"?'#33373E':"#fff"} 
    >
-    <Inject services={[DateTime,BarSeries ,Legend]} />
+    <Inject services={[DateTime,BarSeries ,Legend,Tooltip ]} />
     <SeriesCollectionDirective>
         {barCustomSeries.map((item, index)=>(
             <SeriesDirective key={index} {...item} />

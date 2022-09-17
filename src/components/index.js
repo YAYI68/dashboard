@@ -15,3 +15,4 @@ export { SparkLine } from "./charts/SparkLine";
 export { StackedChart } from "./charts/StackedChart";
 export { AreaChart } from "./charts/AreaChart";
 export { BarChart } from "./charts/BarChart";
+export { PyramidChart } from "./charts/PyramidChart";
